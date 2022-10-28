@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/informaci_n_telefono"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tvVersionAndroidLb"
+            android:layout_width="140dp"
+            android:layout_height="20dp"
+            android:text="@string/tvVersionAndroidLb"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvVersionAndroid"
+            android:layout_width="232dp"
+            android:layout_height="20dp"
+            android:background="#FBE7E7"
+            android:text="@string/textview3"
+            android:textAlignment="center"
+            android:textColor="#070707"
+            android:textSize="14sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="370dp"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/tvBlueT"
+            android:layout_width="140dp"
+            android:layout_height="20dp"
+            android:text="@string/tvBlueT"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnOn"
+            android:layout_width="95dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="15dp"
+            android:onClick="prenderBt"
+            android:text="@string/btnOn"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnOff"
+            android:layout_width="95dp"
+            android:layout_height="48dp"
+            android:onClick="apagarBt"
+            android:text="@string/btnOff"
+            android:textSize="12sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tvLevelBaterryLb"
+            android:layout_width="140dp"
+            android:layout_height="20dp"
+            android:text="@string/tvLevelBaterry"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvLevelBaterry"
+            android:layout_width="232dp"
+            android:layout_height="20dp"
+            android:background="#FBE7E7"
+            android:text="@string/textview"
+            android:textAlignment="center"
+            android:textColor="#070707"
+            android:textSize="14sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tvStorage"
+            android:layout_width="140dp"
+            android:layout_height="20dp"
+            android:text="@string/tvStorage"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etNameFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/nombre_archivo"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColorHint="#757575"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/btnSaveFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FBE7E7"
+            android:contentDescription="@string/btnSaveFile"
+            android:onClick="saveFile"
+            app:srcCompat="@android:drawable/ic_input_add"
+            tools:ignore="ImageContrastCheck" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tvStateLb"
+            android:layout_width="140dp"
+            android:layout_height="20dp"
+            android:text="@string/tvState"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvState"
+            android:layout_width="232dp"
+            android:layout_height="20dp"
+            android:background="#FBE7E7"
+            android:text="@string/textview2"
+            android:textAlignment="center"
+            android:textColor="#070707"
+            android:textSize="14sp" />
+    </TableRow>
+
+</LinearLayout>
